@@ -6,7 +6,7 @@ from django.utils import timezone
 
 try:
     from django.contrib.auth import get_user_model
-    User = get_user_model()
+    User = settings.AUTH_USER_MODEL
 except ImportError:
     from django.contrib.auth.models import User
 
